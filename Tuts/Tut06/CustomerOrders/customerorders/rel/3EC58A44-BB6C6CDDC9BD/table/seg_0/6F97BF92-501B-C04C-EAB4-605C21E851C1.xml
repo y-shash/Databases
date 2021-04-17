@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6F97BF92-501B-C04C-EAB4-605C21E851C1" name="CUSTOMER">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-17 13:48:20 UTC</createdTime>
+<generatorID>1FBF682F-57C2-CB4C-D788-6EB7F9DFD45F</generatorID>
+<ownerDesignName>customerorders</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cust_no" id="98AAE7E5-27E4-DCFB-05C8-BF689207176E">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-17 13:48:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer number]]></commentInRDBMS>
+<generatorID>CE1C57D1-BD1F-A908-EEF4-4375B195C397</generatorID>
+<ownerDesignName>customerorders</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cust_name" id="7408FEAA-0958-668C-939F-5902DF66F22F">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-17 13:48:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer name]]></commentInRDBMS>
+<generatorID>24A3AE66-185C-BAA6-5709-2F584A354FAD</generatorID>
+<ownerDesignName>customerorders</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cust_address" id="061266CF-5A14-D03E-7802-5DBF68A24713">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-17 13:48:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer address]]></commentInRDBMS>
+<generatorID>8FA1BA57-285A-9CA6-95B1-DEC0507D60C9</generatorID>
+<ownerDesignName>customerorders</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cust_phone" id="DD6EDEDD-1457-F4F7-552D-53217C8FDAD8">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-17 13:48:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer phone]]></commentInRDBMS>
+<generatorID>D88F8B1E-8773-5B0F-B48B-69D12FB26C44</generatorID>
+<ownerDesignName>customerorders</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cust_level" id="B45F4057-6A9E-E266-1495-C23908DF8654">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-17 13:48:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer level]]></commentInRDBMS>
+<generatorID>2CDC12B1-F773-4FB9-5F27-E46955608939</generatorID>
+<ownerDesignName>customerorders</ownerDesignName>
+<constraintName>chk_cust_level</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="B" description="Bronze"/>
+<valueDef value="G" description="Gold"/>
+<valueDef value="S" description="Silver"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C095E9C6-C646-26F4-4CC6-8AE94CD2BA52" name="CUSTOMER_PK">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-17 13:48:20 UTC</createdTime>
+<generatorID>8CA856F4-040A-DF65-69A0-930E944E7D5E</generatorID>
+<ownerDesignName>customerorders</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="98AAE7E5-27E4-DCFB-05C8-BF689207176E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

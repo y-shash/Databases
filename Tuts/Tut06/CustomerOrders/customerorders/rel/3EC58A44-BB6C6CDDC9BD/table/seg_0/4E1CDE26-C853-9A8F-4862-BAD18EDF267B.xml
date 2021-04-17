@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4E1CDE26-C853-9A8F-4862-BAD18EDF267B" name="PROD_CATEGORY">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-17 13:48:20 UTC</createdTime>
+<generatorID>BBD45189-8469-E918-F7B2-E36F6D4DD1E0</generatorID>
+<ownerDesignName>customerorders</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="pcat_id" id="5BA1CC6E-78B5-0174-1AE3-6F5E96220B72">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-17 13:48:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[product category number]]></commentInRDBMS>
+<generatorID>55315980-4827-E605-4EEA-9AFB4DDAA521</generatorID>
+<ownerDesignName>customerorders</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pcat_name" id="E9EC5C01-7318-F0A0-B7E0-F12B4236F3F0">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-17 13:48:20 UTC</createdTime>
+<generatorID>39CDFA41-3504-2551-07D7-DFDEADE5C6D8</generatorID>
+<ownerDesignName>customerorders</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F035322C-F503-8672-085F-D1AF9D713D66" name="PROD_CATEGORY_PK">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-17 13:48:20 UTC</createdTime>
+<generatorID>421D1435-2C12-0254-6639-5BA537B7202F</generatorID>
+<ownerDesignName>customerorders</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5BA1CC6E-78B5-0174-1AE3-6F5E96220B72"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1B54B4E3-4D26-C9A7-FA89-EFBB568352A6" name="UN_pcat_name">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-17 13:48:20 UTC</createdTime>
+<generatorID>A91328B9-3C36-E62A-1C83-8CDDEAD2F5F4</generatorID>
+<ownerDesignName>customerorders</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E9EC5C01-7318-F0A0-B7E0-F12B4236F3F0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
