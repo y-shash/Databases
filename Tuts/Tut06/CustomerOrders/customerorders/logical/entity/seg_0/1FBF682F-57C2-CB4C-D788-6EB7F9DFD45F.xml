@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1FBF682F-57C2-CB4C-D788-6EB7F9DFD45F" name="CUSTOMER">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-17 12:10:04 UTC</createdTime>
+<ownerDesignName>customerorders</ownerDesignName>
+<engineerTo>
+<item key="3EC58A44-DFD2-5618-EBEA-BB6C6CDDC9BD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cust_no" id="CE1C57D1-BD1F-A908-EEF4-4375B195C397">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-17 12:10:50 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer number]]></commentInRDBMS>
+<ownerDesignName>customerorders</ownerDesignName>
+<engineerTo>
+<item key="3EC58A44-DFD2-5618-EBEA-BB6C6CDDC9BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cust_name" id="24A3AE66-185C-BAA6-5709-2F584A354FAD">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-17 12:10:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer name]]></commentInRDBMS>
+<ownerDesignName>customerorders</ownerDesignName>
+<engineerTo>
+<item key="3EC58A44-DFD2-5618-EBEA-BB6C6CDDC9BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cust_address" id="8FA1BA57-285A-9CA6-95B1-DEC0507D60C9">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-17 12:10:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer address]]></commentInRDBMS>
+<ownerDesignName>customerorders</ownerDesignName>
+<engineerTo>
+<item key="3EC58A44-DFD2-5618-EBEA-BB6C6CDDC9BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cust_phone" id="D88F8B1E-8773-5B0F-B48B-69D12FB26C44">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-17 12:10:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer phone]]></commentInRDBMS>
+<ownerDesignName>customerorders</ownerDesignName>
+<engineerTo>
+<item key="3EC58A44-DFD2-5618-EBEA-BB6C6CDDC9BD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cust_level" id="2CDC12B1-F773-4FB9-5F27-E46955608939">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-17 12:10:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[customer level]]></commentInRDBMS>
+<ownerDesignName>customerorders</ownerDesignName>
+<engineerTo>
+<item key="3EC58A44-DFD2-5618-EBEA-BB6C6CDDC9BD" value="true"/>
+</engineerTo>
+<constraintName>chk_cust_level</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="B" description="Bronze"/>
+<valueDef value="G" description="Gold"/>
+<valueDef value="S" description="Silver"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="8CA856F4-040A-DF65-69A0-930E944E7D5E" name="CUSTOMER PK">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-17 12:12:47 UTC</createdTime>
+<ownerDesignName>customerorders</ownerDesignName>
+<engineerTo>
+<item key="3EC58A44-DFD2-5618-EBEA-BB6C6CDDC9BD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>CE1C57D1-BD1F-A908-EEF4-4375B195C397</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

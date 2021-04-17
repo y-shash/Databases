@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7B26ABD7-D57D-0CC2-CD55-3BD3C9103AE2" name="ORDERLINE">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-17 12:23:08 UTC</createdTime>
+<ownerDesignName>customerorders</ownerDesignName>
+<engineerTo>
+<item key="3EC58A44-DFD2-5618-EBEA-BB6C6CDDC9BD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="ol_qtyordered" id="E98B68E1-B9F3-118C-FFED-6399BD2C2E24">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-17 12:23:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[quantity ordered]]></commentInRDBMS>
+<ownerDesignName>customerorders</ownerDesignName>
+<engineerTo>
+<item key="3EC58A44-DFD2-5618-EBEA-BB6C6CDDC9BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ol_lineprice" id="4ADD8297-FA43-1D1C-C183-D9EA6E0FB4E8">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-17 12:23:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[order price]]></commentInRDBMS>
+<ownerDesignName>customerorders</ownerDesignName>
+<engineerTo>
+<item key="3EC58A44-DFD2-5618-EBEA-BB6C6CDDC9BD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="order_no" id="ED4E97EE-60E3-A8C1-041C-1713FD656A4D">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-17 12:53:09 UTC</createdTime>
+<generatorID>836AFCBD-EC33-F479-CA4C-6D8B03B5D609</generatorID>
+<ownerDesignName>customerorders</ownerDesignName>
+<engineerTo>
+<item key="3EC58A44-DFD2-5618-EBEA-BB6C6CDDC9BD" value="true"/>
+</engineerTo>
+<referedAttribute>7E57F645-66B4-2989-78F4-BFE08AEFE3DD</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="prod_no" id="DC142F9F-E4E8-A31B-3CB0-04CBF0B7C2D8">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-17 12:56:13 UTC</createdTime>
+<generatorID>6EA593D9-2B05-2946-2BCB-E3E4301265A2</generatorID>
+<ownerDesignName>customerorders</ownerDesignName>
+<engineerTo>
+<item key="3EC58A44-DFD2-5618-EBEA-BB6C6CDDC9BD" value="true"/>
+</engineerTo>
+<referedAttribute>570A556A-9791-E048-1753-FF2ED0EDD256</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="67493E1D-C405-B422-3526-AA8F939CF747" name="ORDERLINE PK">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-17 13:20:18 UTC</createdTime>
+<ownerDesignName>customerorders</ownerDesignName>
+<engineerTo>
+<item key="3EC58A44-DFD2-5618-EBEA-BB6C6CDDC9BD" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>ED4E97EE-60E3-A8C1-041C-1713FD656A4D</attributeRef>
+<attributeRef>DC142F9F-E4E8-A31B-3CB0-04CBF0B7C2D8</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
