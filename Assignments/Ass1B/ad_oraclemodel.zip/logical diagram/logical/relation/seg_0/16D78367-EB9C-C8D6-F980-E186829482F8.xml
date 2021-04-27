@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="DRUG_SERVICE" directorySegmentName="seg_0" id="16D78367-EB9C-C8D6-F980-E186829482F8">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 17:27:14 UTC</createdTime>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<sourcePk>5D28186C-DC36-0632-6069-FE81101CF893</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>belongs to</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9C0C28DF-8A1A-AA4F-6802-CB57B36D2A4E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>16661FBE-CA0D-329E-1FF4-376A1ACCEC4C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

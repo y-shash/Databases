@@ -1,0 +1,22 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="VET_SERVICE" directorySegmentName="seg_0" id="609F2FBF-842F-AA9F-0E8E-2CE846DD1ACB">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 14:53:27 UTC</createdTime>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<sourcePk>18AF52FE-D8DC-F813-966F-E6E82A7AA3E2</sourcePk>
+<targetPk>6A7FD8FB-FA9F-7AE0-AAC7-F80CBA09E1DF</targetPk>
+<identifying>false</identifying>
+<nameOnSource>do</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>215F2A72-2ADD-8946-6BB9-79B920D10A83</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>16661FBE-CA0D-329E-1FF4-376A1ACCEC4C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>
