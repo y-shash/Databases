@@ -104,7 +104,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="vet_id" id="648162B5-699F-CED1-922D-51FE7649E40A">
 <createdBy>yneh0001</createdBy>
@@ -120,7 +120,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>4</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="service_code" id="568F32C9-DD59-BC95-64A8-B97E99B0D827">
 <createdBy>yneh0001</createdBy>
@@ -149,7 +149,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="pet_id1" id="6C77FA18-447C-CE81-DA93-5231D2E66B99">
 <createdBy>yneh0001</createdBy>
@@ -165,7 +165,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
@@ -173,8 +173,9 @@
 <createdBy>yneh0001</createdBy>
 <createdTime>2021-04-27 13:36:44 UTC</createdTime>
 <ownerDesignName>logical diagram</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
 <engineerTo>
-<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="false"/>
 </engineerTo>
 <pk>true</pk>
 <usedAttributes>

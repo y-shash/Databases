@@ -1,0 +1,238 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E244F8A9-13DF-F976-B6FC-36F176D32629" name="SERVICE">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<generatorID>16661FBE-CA0D-329E-1FF4-376A1ACCEC4C</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="service_cost" id="42BADB18-DA17-7014-195D-B1A4D1A99C6E">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[service cost]]></commentInRDBMS>
+<generatorID>0427DB91-C273-2CD5-7F09-15593C2CE35A</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vet_notes" id="2E6EA495-F4B7-6FE3-8C8F-37D7EAD9A56C">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet notes on the pet condition]]></commentInRDBMS>
+<generatorID>C2DBA791-02DF-0484-1850-32EF58837B8C</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="service_length" id="495017C7-3175-A8D8-5575-A52161F2D25D">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[the length of the service]]></commentInRDBMS>
+<generatorID>FB4C29C6-5F70-D782-7352-B0DB6DA391D3</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,2,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="pet_id" id="36A6A20C-1FE9-F5D2-908E-9AE8FA99921D">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[pet id]]></commentInRDBMS>
+<generatorID>EB2C632E-01CB-F76D-0BC2-B582A9FB3D88</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="38BBA132-347C-9239-360C-98DD27155EB8" referredColumn="3415F04F-7149-3526-96C0-B0FE5E3D8708"/>
+</associations>
+</Column>
+<Column name="service_datetime" id="5BED3052-F466-0050-AFCF-36B516651DD4">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[service date ad time]]></commentInRDBMS>
+<generatorID>141ACB5E-0289-B7FE-D6D4-260BA217194F</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="38BBA132-347C-9239-360C-98DD27155EB8" referredColumn="DF48EA6F-E6E4-9759-0D17-A014372BC7A2"/>
+</associations>
+</Column>
+<Column name="clinic_id" id="0E8352AD-E47B-A9B1-276E-91582CA9D63B">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[clinic id]]></commentInRDBMS>
+<generatorID>99851ABF-1D31-6F0E-C15A-123912E48210</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="906A91B2-4FB6-B51B-07E3-F695F1B751B1" referredColumn="6DE3B0F0-4BCD-4575-BFCC-0B30E4FABF0A"/>
+</associations>
+</Column>
+<Column name="vet_id" id="6F1BCE92-4595-2FDE-AE91-B8335F5F5352">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet id]]></commentInRDBMS>
+<generatorID>648162B5-699F-CED1-922D-51FE7649E40A</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0E9A736D-D980-6ED2-0206-BED57C5571FB" referredColumn="A8C67F0D-48CE-E5E2-54C8-8078CDCE9E05"/>
+</associations>
+</Column>
+<Column name="service_code" id="C9F64BEB-A593-4F26-80D8-05438348F83F">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<generatorID>568F32C9-DD59-BC95-64A8-B97E99B0D827</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="drug_id" id="A0342271-462B-200B-6E9C-742362091A92">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[drug id]]></commentInRDBMS>
+<generatorID>C314EEEE-C021-40C1-7543-87C442F2161E</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6E1CB87E-7138-CD24-6756-BB1FAF3D0A7B" referredColumn="552A7AFD-EEC9-8525-3BE5-EE450A8FBB29"/>
+</associations>
+</Column>
+<Column name="pet_id1" id="48290FCC-DA73-66D6-1D89-42953B777221">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[pet identification number]]></commentInRDBMS>
+<generatorID>6C77FA18-447C-CE81-DA93-5231D2E66B99</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="10BB3839-6628-FA3F-635A-CC5582D62C2D" referredColumn="3B964975-E1F8-DF08-A833-A475EBA05610"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C37D1EE0-FDA6-CFA5-CD11-64B62FFD7B57" name="SERVICE_PK">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<generatorID>6A7FD8FB-FA9F-7AE0-AAC7-F80CBA09E1DF</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9F64BEB-A593-4F26-80D8-05438348F83F"/>
+<colUsage columnID="5BED3052-F466-0050-AFCF-36B516651DD4"/>
+<colUsage columnID="36A6A20C-1FE9-F5D2-908E-9AE8FA99921D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E88D9058-F3B6-BD18-47EA-0E235E1C8C7C" name="CLINIC_SERVICE">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<generatorID>D343649E-593F-2382-3B1D-041F5DB2581D</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E8352AD-E47B-A9B1-276E-91582CA9D63B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FEF14E19-1764-4BB1-ECF7-6D0232515D50" name="DRUG_SERVICE">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<generatorID>16D78367-EB9C-C8D6-F980-E186829482F8</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A0342271-462B-200B-6E9C-742362091A92"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="97FD2153-0875-A024-12FC-349E96F6789E" name="INVOICE_SERVICE">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<generatorID>78609BF8-9402-BA12-E297-999F31D84CFE</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36A6A20C-1FE9-F5D2-908E-9AE8FA99921D"/>
+<colUsage columnID="5BED3052-F466-0050-AFCF-36B516651DD4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8E03A17E-73C5-D6A4-F79C-5B06D7A61A63" name="PET_SERVICE">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<generatorID>02BE65CB-BC4E-5E61-0158-060500B72E6D</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="48290FCC-DA73-66D6-1D89-42953B777221"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="148A767D-3EA7-A452-BFAC-BB46FB09AF45" name="VET_SERVICE">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<generatorID>609F2FBF-842F-AA9F-0E8E-2CE846DD1ACB</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6F1BCE92-4595-2FDE-AE91-B8335F5F5352"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

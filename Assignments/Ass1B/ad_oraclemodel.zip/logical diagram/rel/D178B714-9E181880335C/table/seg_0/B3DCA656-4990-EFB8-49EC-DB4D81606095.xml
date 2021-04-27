@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B3DCA656-4990-EFB8-49EC-DB4D81606095" name="DRUG_DETAILS">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<generatorID>BDE0C974-7284-89CE-4768-7BD73093B850</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="drug_name" id="03D70A5F-0FDB-4D95-8C76-432E57A2C2C2">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[drug name]]></commentInRDBMS>
+<generatorID>48C7A3A0-BD92-8DC8-DC8F-2BCC340FE45D</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="drug_instructions" id="014AAD20-0032-74AA-27CF-64707F7E7415">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[drug instructions]]></commentInRDBMS>
+<generatorID>12DDF72B-2E48-48B5-0ACC-A87AF86C0553</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="drug_id" id="A72E5D10-8AC0-4352-EB0A-8F0D83DC2D24">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[drug id]]></commentInRDBMS>
+<generatorID>71FE8F50-D90F-E253-69A2-DE6C48F22D52</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="538E0513-A7C2-4228-6B71-9F1A336BE8F1" referredColumn="552A7AFD-EEC9-8525-3BE5-EE450A8FBB29"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="009F20D7-39D8-F466-2EB8-18BE1C34572C" name="DRUG_DETAILS_PK">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<generatorID>E28EFAE5-1668-3D49-B536-7AE7CF6FD4B9</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A72E5D10-8AC0-4352-EB0A-8F0D83DC2D24"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CC6EBB29-6167-A01F-9F07-6BBC34E629C8" name="UN_drug_name">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<generatorID>43352498-5951-0442-D330-B6ECC8CF81D5</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="03D70A5F-0FDB-4D95-8C76-432E57A2C2C2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F66E0FE3-EDED-02A8-6D63-052805D4620E" name="DRUG_DETAILS">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<generatorID>ADCB344C-2538-49AA-0000-068BE2AD5C9E</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A72E5D10-8AC0-4352-EB0A-8F0D83DC2D24"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

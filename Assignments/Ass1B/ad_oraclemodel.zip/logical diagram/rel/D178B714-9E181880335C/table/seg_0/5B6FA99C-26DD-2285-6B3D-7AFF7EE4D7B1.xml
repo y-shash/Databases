@@ -1,0 +1,78 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5B6FA99C-26DD-2285-6B3D-7AFF7EE4D7B1" name="CLINIC">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<generatorID>3B45E4D2-1C63-7A1A-EF73-5EED3A27618D</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="clinic_id" id="6DE3B0F0-4BCD-4575-BFCC-0B30E4FABF0A">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[clinic id]]></commentInRDBMS>
+<generatorID>F64A808E-B805-3009-2DBC-B71E018175BF</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clinic_name" id="18AE569A-E36A-D5D4-A123-733706F06ACE">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[clinic name]]></commentInRDBMS>
+<generatorID>8A26E10B-CA39-D895-34B1-CBF8E84CAD3E</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clinic_address" id="5307CEEF-1CCC-2542-6602-2B0E7B18587B">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[the clinic address]]></commentInRDBMS>
+<generatorID>A7583534-3601-4A8E-AB69-8EB4E57746E4</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clinic_phone" id="EFFD2B6F-1C4C-48C2-AB26-1267F1A46F81">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[clinic phone number]]></commentInRDBMS>
+<generatorID>1A3DBF6D-37A9-E111-90C8-4EE6547BCE31</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="8DDA3934-A491-48D3-DC94-7350390DE275" name="CLINIC_PK">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<generatorID>44A7B8C2-4216-3CE4-403D-D5EAF0AE013F</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6DE3B0F0-4BCD-4575-BFCC-0B30E4FABF0A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C2E69A7E-8A73-EE13-9DFA-860D9CF8E167" name="SERVICE_DETAILS">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<generatorID>15F8D213-9D5E-3797-888B-A81F35477BC9</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="service_desc" id="B4AD090E-D76B-B2BA-D050-07881784577B">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[service description]]></commentInRDBMS>
+<generatorID>14775D54-0143-CC85-B0E8-234CACB1E688</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="service_code" id="8EB6ED5D-DDC0-407F-97CB-2868CF1B18AA">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<generatorID>2798DFA3-27F9-34C0-6D7C-341A7883BBE1</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="65D2D7CB-C893-1638-4DA8-1AAD2EB26336" referredColumn="C9F64BEB-A593-4F26-80D8-05438348F83F"/>
+</associations>
+</Column>
+<Column name="service_datetime" id="0251C24B-B26C-C978-FFBD-77FC7DCFF40D">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[service date ad time]]></commentInRDBMS>
+<generatorID>F149372C-7122-696F-20B4-E8086B002B31</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="65D2D7CB-C893-1638-4DA8-1AAD2EB26336" referredColumn="5BED3052-F466-0050-AFCF-36B516651DD4"/>
+</associations>
+</Column>
+<Column name="pet_id" id="CE0AAD7F-BB8B-77CD-5058-EC496AB9AA3A">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[pet id]]></commentInRDBMS>
+<generatorID>E345A062-A71D-EF16-1046-A3E3FA1BF69B</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="65D2D7CB-C893-1638-4DA8-1AAD2EB26336" referredColumn="36A6A20C-1FE9-F5D2-908E-9AE8FA99921D"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="0BB2257A-A779-B0BA-3298-0A3BA3BC334D" name="SERVICE_DETAILS_PK">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<generatorID>07D7DB70-2106-957B-4C8B-7CFB52B94A4C</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+</ind_PK_UK>
+<ind_PK_UK id="5C81F537-4907-5860-D17C-0B8E9816508C" name="SERVICE_DETAILS">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 21:30:38 UTC</createdTime>
+<generatorID>24F2F223-8B35-B4BA-C767-F756CA152793</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8EB6ED5D-DDC0-407F-97CB-2868CF1B18AA"/>
+<colUsage columnID="0251C24B-B26C-C978-FFBD-77FC7DCFF40D"/>
+<colUsage columnID="CE0AAD7F-BB8B-77CD-5058-EC496AB9AA3A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
