@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="CLINIC_VET" directorySegmentName="seg_0" id="D5BEB432-BCCC-85AD-F119-667F048FC194">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 14:40:43 UTC</createdTime>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<sourcePk>44A7B8C2-4216-3CE4-403D-D5EAF0AE013F</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>employs</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3B45E4D2-1C63-7A1A-EF73-5EED3A27618D</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>215F2A72-2ADD-8946-6BB9-79B920D10A83</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

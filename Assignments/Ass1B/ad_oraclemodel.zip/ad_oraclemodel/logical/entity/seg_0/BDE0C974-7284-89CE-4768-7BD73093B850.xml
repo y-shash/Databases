@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BDE0C974-7284-89CE-4768-7BD73093B850" name="DRUG_DETAILS">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 14:05:03 UTC</createdTime>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="drug_name" id="48C7A3A0-BD92-8DC8-DC8F-2BCC340FE45D">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 14:05:16 UTC</createdTime>
+<commentInRDBMS><![CDATA[drug name]]></commentInRDBMS>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="drug_instructions" id="12DDF72B-2E48-48B5-0ACC-A87AF86C0553">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 14:05:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[drug instructions]]></commentInRDBMS>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="drug_id" id="71FE8F50-D90F-E253-69A2-DE6C48F22D52">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 17:30:06 UTC</createdTime>
+<commentInRDBMS><![CDATA[drug id]]></commentInRDBMS>
+<generatorID>ADCB344C-2538-49AA-0000-068BE2AD5C9E</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<referedAttribute>DD9EEB1A-1FB9-383F-E09D-C0D1FDA71C64</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E28EFAE5-1668-3D49-B536-7AE7CF6FD4B9" name="DRUG_DETAILS PK">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 14:05:37 UTC</createdTime>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>71FE8F50-D90F-E253-69A2-DE6C48F22D52</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="43352498-5951-0442-D330-B6ECC8CF81D5" name="UN_drug_name">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 17:57:32 UTC</createdTime>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<newElementsIDs>48C7A3A0-BD92-8DC8-DC8F-2BCC340FE45D</newElementsIDs>
+<usedAttributes>
+<attributeRef>48C7A3A0-BD92-8DC8-DC8F-2BCC340FE45D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

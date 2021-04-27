@@ -1,0 +1,187 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="16661FBE-CA0D-329E-1FF4-376A1ACCEC4C" name="SERVICE">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 13:35:30 UTC</createdTime>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="service_cost" id="0427DB91-C273-2CD5-7F09-15593C2CE35A">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 13:36:20 UTC</createdTime>
+<commentInRDBMS><![CDATA[service cost]]></commentInRDBMS>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vet_notes" id="C2DBA791-02DF-0484-1850-32EF58837B8C">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 13:36:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet notes on the pet condition]]></commentInRDBMS>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="service_length" id="FB4C29C6-5F70-D782-7352-B0DB6DA391D3">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 13:36:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[the length of the service]]></commentInRDBMS>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,2,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pet_id" id="EB2C632E-01CB-F76D-0BC2-B582A9FB3D88">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 14:46:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[pet id]]></commentInRDBMS>
+<generatorID>78609BF8-9402-BA12-E297-999F31D84CFE</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<referedAttribute>334F8160-73EA-BEA9-79ED-2762825E3DD2</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="service_datetime" id="141ACB5E-0289-B7FE-D6D4-260BA217194F">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 14:46:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[service date ad time]]></commentInRDBMS>
+<generatorID>78609BF8-9402-BA12-E297-999F31D84CFE</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<referedAttribute>8A0CA391-ABD8-4E71-475E-BF5329286F6E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="clinic_id" id="99851ABF-1D31-6F0E-C15A-123912E48210">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 14:50:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[clinic id]]></commentInRDBMS>
+<generatorID>D343649E-593F-2382-3B1D-041F5DB2581D</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<referedAttribute>F64A808E-B805-3009-2DBC-B71E018175BF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vet_id" id="648162B5-699F-CED1-922D-51FE7649E40A">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 14:53:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[vet id]]></commentInRDBMS>
+<generatorID>609F2FBF-842F-AA9F-0E8E-2CE846DD1ACB</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<referedAttribute>C440856A-7E1C-0CE2-9065-7368A8D2205F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="service_code" id="568F32C9-DD59-BC95-64A8-B97E99B0D827">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 17:22:05 UTC</createdTime>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>5</dataTypeSize>
+<ownDataTypeParameters>5,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="drug_id" id="C314EEEE-C021-40C1-7543-87C442F2161E">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 17:27:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[drug id]]></commentInRDBMS>
+<generatorID>16D78367-EB9C-C8D6-F980-E186829482F8</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<referedAttribute>DD9EEB1A-1FB9-383F-E09D-C0D1FDA71C64</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pet_id1" id="6C77FA18-447C-CE81-DA93-5231D2E66B99">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 17:31:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[pet identification number]]></commentInRDBMS>
+<generatorID>02BE65CB-BC4E-5E61-0158-060500B72E6D</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<referedAttribute>8826B405-B04D-D06D-5003-21B1EA53D873</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6A7FD8FB-FA9F-7AE0-AAC7-F80CBA09E1DF" name="SERVICE PK">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 13:36:44 UTC</createdTime>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>568F32C9-DD59-BC95-64A8-B97E99B0D827</attributeRef>
+<attributeRef>141ACB5E-0289-B7FE-D6D4-260BA217194F</attributeRef>
+<attributeRef>EB2C632E-01CB-F76D-0BC2-B582A9FB3D88</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="INVOICE_SERVICE" directorySegmentName="seg_0" id="78609BF8-9402-BA12-E297-999F31D84CFE">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 14:46:30 UTC</createdTime>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<sourcePk>3C1E504C-866E-C6F0-E41A-8B65052C82F5</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>has</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3242DB3F-8942-E9A3-6411-A3F86689ACA5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>16661FBE-CA0D-329E-1FF4-376A1ACCEC4C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,130 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A5BC1038-32BB-FE31-F2A9-FAF48B889E5F" name="PET">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 12:46:34 UTC</createdTime>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="pet_id" id="8826B405-B04D-D06D-5003-21B1EA53D873">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 12:47:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[pet identification number]]></commentInRDBMS>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pet_gender" id="04F198A6-7CF0-A2BF-C8C9-581FC82F69BD">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 12:47:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[pet gender]]></commentInRDBMS>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pet_name" id="46BE143E-1C94-EE92-7FDA-D6E3E6354BDC">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 12:47:48 UTC</createdTime>
+<commentInRDBMS><![CDATA[pet name]]></commentInRDBMS>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pet_type" id="64ECDC22-10A1-0D06-565A-32F1DB031DBA">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 12:47:49 UTC</createdTime>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pet_birthdate" id="AD336C01-4186-6630-6B5D-3312CDA16696">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 12:47:49 UTC</createdTime>
+<commentInRDBMS><![CDATA[pet birth date]]></commentInRDBMS>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pet_decreased" id="4DEFE388-EBF1-90D0-3520-F12DC2287E5B">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 12:47:50 UTC</createdTime>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="owner_id" id="30875944-4D94-D82B-3A51-CF5886077F67">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 15:02:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[owners' identification number]]></commentInRDBMS>
+<generatorID>5EBD7695-E119-13D3-59AE-DABE0357FAEC</generatorID>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<referedAttribute>09D97183-978F-A921-54D2-11F728A12DD0</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="BAE0C6F0-6944-D980-099E-22E21E898AE8" name="OWNER_PET PK">
+<createdBy>yneh0001</createdBy>
+<createdTime>2021-04-27 12:48:19 UTC</createdTime>
+<ownerDesignName>logical diagram</ownerDesignName>
+<engineerTo>
+<item key="D178B714-BBF5-3B11-9001-9E181880335C" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8826B405-B04D-D06D-5003-21B1EA53D873</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
