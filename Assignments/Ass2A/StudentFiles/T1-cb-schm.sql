@@ -19,10 +19,10 @@ Oracle.
 */
 --PLEASE PLACE REQUIRED SQL STATEMENT(S) BELOW
 
-drop table ANIMAL purge;
-drop table BREEDING_EVENT purge;
-drop table SPECIES purge;
-drop table CENTRE purge;
+drop table ANIMAL cascade constraints purge;
+drop table BREEDING_EVENT cascade constraints purge;
+drop table SPECIES cascade constraints purge;
+drop table CENTRE cascade constraints purge;
 
 
 -- Create Tables
