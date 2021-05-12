@@ -97,7 +97,14 @@ COMMENT ON COLUMN BREEDING_EVENT.mother_id IS
 
 COMMENT ON COLUMN BREEDING_EVENT.father_id IS
     'The animal_id of the animal who was the father';
-
+    
+ALTER TABLE BREEDING_EVENT
+    ADD CONSTRAINT mother_animal_fk FOREIGN KEY (mother_id) REFERENCES ANIMAL (animal_id)
+        ON DELETE SET NULL;
+        
+ALTER TABLE BREEDING_EVENT
+    ADD CONSTRAINT father_animal_fk FOREIGN KEY (father_id) REFERENCES ANIMAL (animal_id)
+        ON DELETE SET NULL;    
 
 create table ANIMAL (
     animal_id   NUMERIC(6) NOT NULL,
@@ -135,8 +142,6 @@ COMMENT ON COLUMN ANIMAL.spec_genus IS
 COMMENT ON COLUMN ANIMAL.spec_name IS
     'The species name for the animal';
     
-ALTER TABLE BREEDING_EVENT
-    ADD CONSTRAINT breeding_animal_fk FOREIGN KEY (mother_id, father_id) REFERENCES ANIMAL (animal_id)
-        ON DELETE SET NULL;
+
 
     
