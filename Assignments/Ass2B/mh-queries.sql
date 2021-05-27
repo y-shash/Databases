@@ -89,25 +89,48 @@ ORDER BY hrs_flown;
 */
 -- PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE
 -- ENSURE your query has a semicolon (;) at the end of this answer
-
-
+SELECT charter.charter_nbr, to_char(charter_leg.cl_atd, 'dd/MON/yyyy hh:mi:ss PM')
+FROM (MH.CHARTER JOIN MH.EMPLOYEE ON CHARTER.emp_nbr = EMPLOYEE.emp_nbr) 
+JOIN MH.CHARTER_LEG ON CHARTER.charter_nbr = CHARTER_LEG.charter_nbr
+WHERE (EMPLOYEE.emp_lname = 'Baggins' AND EMPLOYEE.emp_fname = 'Frodo')
+AND (CHARTER_LEG.cl_atd IS NOT NULL AND CHARTER_LEG.cl_ata IS NOT NULL)
+ORDER BY charter_leg.cl_atd
 /*
     Q8
 */
 -- PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE
 -- ENSURE your query has a semicolon (;) at the end of this answer
 
+-- SELECT CHARTER.charter_nbr, CLIENT.client_nbr, CLIENT.client_lname, CLIENT.client_fname,
+-- CHARTER.charter_cost_per_hour * (to_char(charter_leg.cl_ata, 'dd/MON/yyyy hh:mi:ss PM') - 
+-- to_char(charter_leg.cl_atd, 'dd/MON/yyyy hh:mi:ss PM')) AS totalchartercost
+-- FROM (MH.CHARTER JOIN MH.CLIENT ON CHARTER.client_nbr = CLIENT.client_nbr) 
+-- JOIN MH.CHARTER_LEG ON CHARTER.charter_nbr = CHARTER_LEG.charter_nbr;
 
 /*
     Q9
 */
 -- PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE
 -- ENSURE your query has a semicolon (;) at the end of this answer
-
+SELECT CHARTER.charter_nbr, EMPLOYEE.emp_fname || ' ' || EMPLOYEE.emp_lname AS PILOTNAME, 
+CLIENT.client_fname || ' ' || CLIENT.client_lname AS CLIENTNAME
+FROM ((MH.CHARTER_LEG JOIN MH.CHARTER ON CHARTER_LEG.charter_nbr = CHARTER.charter_nbr) 
+JOIN MH.EMPLOYEE ON CHARTER.emp_nbr = EMPLOYEE.emp_nbr) JOIN MH.CLIENT ON CLIENT.client_nbr = CHARTER.charter_nbr
+WHERE (to_char(CHARTER_LEG.cl_etd) = to_char(CHARTER_LEG.cl_atd)) AND EMPLOYEE.emp_is_pilot = 'Y'
+ORDER BY charter_nbr;
 
 /*
     Q10
 */
 -- PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE
 -- ENSURE your query has a semicolon (;) at the end of this answer
+
+SELECT CLIENT.client_nbr || ' ' || CLIENT.client_fname || ' ' || CLIENT.client_lname AS CLIENTDET, LOCATION.location_name, count(*) AS FAVORITE_DEST
+FROM ((MH.CLIENT JOIN MH.CHARTER ON CLIENT.client_nbr = CHARTER.client_nbr) 
+JOIN MH.CHARTER_LEG ON CHARTER.charter_nbr = CHARTER_LEG.charter_nbr)
+JOIN MH.LOCATION ON LOCATION.location_nbr = CHARTER_LEG.location_nbr_destination
+GROUP BY CLIENT.client_nbr || ' ' || CLIENT.client_fname || ' ' || CLIENT.client_lname, LOCATION.location_name
+order by CLIENTDET, LOCATION.location_name;
+
+
 
